@@ -1,0 +1,228 @@
+.top-logo-section {
+    background-color: #16c20f;
+    min-height: 60px;
+    line-height: 55px;
+    color: #fff;
+    .marker_ span .fa-inverse {
+        color: #16c20f;
+    }
+    .lang>a {
+        background-color: #fff;
+        color: #16c20f;
+        padding: 5px 22px 5px 22px;
+        border-radius: 5px;
+        border-color: #fff;
+        margin-left: 10px;
+    }
+}
+
+.slider_ {
+    img {
+        object-fit: cover;
+        max-width: 100%;
+        // max-height: 600px;
+    }
+    .carousel-inner .carousel-caption {
+        h2 {
+            font-size: 50px;
+            padding-right: 50px;
+        }
+    }
+}
+
+.slider_ {
+    .carousel-control-next img {
+        position: absolute;
+    }
+    .carousel-control-prev img {
+        position: absolute;
+        border: 1px solid black;
+        padding: 10px;
+        background: #fff;
+        bottom: 203px;
+        left: 56px;
+    }
+}
+
+// .section_1 {
+.under::before {
+    content: ' ';
+    width: 100px;
+    height: 4px;
+    right: 0px;
+    background-color: #16c20f;
+    position: absolute;
+    top: -10px;
+}
+
+// }
+.prallel-bk {
+    background-image: url("../img/parallax.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+.prallel-bk .bk-trans {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    height: 100%
+}
+
+.prallel-bk .under::before,
+.galary .under::before {
+    background-color: #fff;
+    margin: auto;
+    left: 0;
+}
+
+.news {
+    .card {
+        img {
+            width: 100%;
+            object-fit: cover;
+            max-height: 200px;
+        }
+    }
+    .under::before {
+        left: 0px;
+        margin: auto;
+    }
+}
+
+.witharrow {
+    transition: all 200ms ease-in-out;
+    transition: padding 500ms ease-in-out;
+    &:after {
+        content: '\f30a';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        position: absolute;
+        right: 0;
+        top: 3px;
+        display: none;
+    }
+    &:hover {
+        padding-right: 25px;
+        &:after {
+            display: inline-block;
+        }
+    }
+}
+
+.news .position-relative .position-absolute {
+    width: 70px;
+    background-color: #10820b;
+    height: 80px;
+    bottom: 0px;
+    right: 24px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.contribute {
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 110px;
+        padding: 20px;
+    }
+    .card:hover {
+        cursor: pointer;
+        box-shadow: 0 3px 10px 5px rgba(173, 173, 173, 0.22);
+    }
+    .card:hover img {
+        transition: all 0.6s ease-in-out;
+        transform: rotate(5deg);
+    }
+    .under::before {
+        left: 0px;
+        margin: auto;
+    }
+}
+
+footer {
+    background-color: #212331 !important;
+    .fa-inverse {
+        color: #fff;
+        display: inline-block;
+    }
+    a {
+        color: #fff;
+        font-size: 22px;
+    }
+    .under-line::before {
+        content: '';
+        width: 15%;
+        height: 8px;
+        background-color: $second-color;
+        position: absolute;
+        bottom: -23px;
+        left: 0;
+        z-index: 1;
+    }
+    .cove {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 100%;
+        @media (max-width: 700px) {
+            display: none;
+        }
+    }
+}
+
+footer a:hover {
+    color: $main-color;
+}
+
+.foot_under {
+    color: #fff;
+    @media (max-width: 992px) {
+        img {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.foot_under a:hover {
+    color: $main-color;
+}
+
+.galary {
+    .position-relative>img {
+        object-fit: cover;
+    }
+    .ov-gal {
+        opacity: 0;
+        transition: all 0.6s ease-in-out;
+        background-color: rgba(0, 0, 0, 0.6);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        &>div {
+            margin-top: 170px;
+        }
+        h4 {
+            &::after {
+                content: '';
+                content: '';
+                width: 80px;
+                height: 3px;
+                bottom: -21px;
+                background-color: #fff;
+                position: absolute;
+                display: block;
+            }
+        }
+        .border-white.rounded-circle {
+            width: 60px;
+            height: 60px;
+        }
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}

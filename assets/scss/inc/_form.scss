@@ -1,0 +1,150 @@
+.name-form {
+    background-color: #fff;
+}
+
+form {
+    background-color: #fff;
+    .input-group-text {
+        background-color: #fff;
+        border-right: 0;
+        border-left: 1px solid;
+        border-color: #8a8a8a;
+    }
+    label {
+        font-size: 21px;
+        margin-bottom: 12px;
+    }
+    .form-control {
+        // border-left: 0;
+        // border-right: 1px solid;
+        border-color: #E3E3E3;
+        // height: calc(2.5em + .75rem + 2px);
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+     ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #B4B4B4;
+    }
+     ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #B4B4B4;
+    }
+     :-ms-input-placeholder {
+        /* IE 10+ */
+        color: #B4B4B4;
+    }
+     :-moz-placeholder {
+        /* Firefox 18- */
+        color: #B4B4B4;
+    }
+}
+
+body.rtl {
+    .rounded-left {
+        border-top-left-radius: .25rem !important;
+        border-bottom-left-radius: .25rem !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+    .form form {
+        .input-group-text {
+            border-left: 0;
+            border-right: 1px solid;
+        }
+        .form-control {
+            border-right: 0;
+            border-left: 1px solid;
+        }
+    }
+    .input-group>.input-group-prepend>.btn,
+    .input-group>.input-group-prepend>.input-group-text,
+    .input-group>.input-group-append:not(:last-child)>.btn,
+    .input-group>.input-group-append:not(:last-child)>.input-group-text,
+    .input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle),
+    .input-group>.input-group-append:last-child>.input-group-text:not(:last-child) {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .input-group>.form-control:not(:first-child),
+    .input-group>.custom-select:not(:first-child) {
+        border-top-left-radius: .3rem;
+        border-bottom-left-radius: .3rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.normal-zoom {
+    transform: scale(1);
+    cursor: zoom-in;
+    transition: transform 250ms;
+}
+
+.zoom-in {
+    transform: scale(1.1);
+    cursor: zoom-out;
+    transition: transform 250ms;
+}
+
+.rounded-left {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: .25em !important;
+    border-bottom-right-radius: .25em !important;
+}
+
+.myinput[type="checkbox"]:before {
+    position: relative;
+    display: block;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #808080;
+    content: "";
+    background: #FFF;
+}
+
+.myinput[type="checkbox"]:after {
+    position: relative;
+    display: block;
+    left: 2px;
+    top: -11px;
+    width: 7px;
+    height: 7px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #B3B3B3 #dcddde #dcddde #B3B3B3;
+    content: "";
+    background-image: linear-gradient(135deg, #B1B6BE 0%, #FFF 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.myinput[type="checkbox"]:checked:after {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAQAAABuW59YAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAB2SURBVHjaAGkAlv8A3QDyAP0A/QD+Dam3W+kCAAD8APYAAgTVZaZCGwwA5wr0AvcA+Dh+7UX/x24AqK3Wg/8nt6w4/5q71wAAVP9g/7rTXf9n/+9N+AAAtpJa/zf/S//DhP8H/wAA4gzWj2P4lsf0JP0A/wADAHB0Ngka6UmKAAAAAElFTkSuQmCC'), linear-gradient(135deg, #B1B6BE 0%, #FFF 100%);
+}
+
+.to-logo-section {
+    border-color: $main-color;
+    .input-group>.form-control {
+        border-radius: 30px !important;
+        height: 38px;
+    }
+    .form-control {
+        border: none;
+        border-top-right-radius: 28px !important;
+        border-top-left-radius: 28px !important;
+    }
+    .input-group-append {
+        background-color: #cf1010;
+        border-top-left-radius: 28px;
+        border-bottom-left-radius: 28px;
+    }
+    .form-inline {
+        border-radius: 28px;
+    }
+}

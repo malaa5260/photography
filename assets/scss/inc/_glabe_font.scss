@@ -1,0 +1,23 @@
+@font-face {
+    font-family: myFont;
+    src: url("./DinNextRegular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url("./EngraversMT.ttf") format("opentype");
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+    font-family: 'myFont', sans-serif;
+}
